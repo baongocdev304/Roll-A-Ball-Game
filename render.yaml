@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: roll-a-ball-3d-game
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./web-mobile
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
