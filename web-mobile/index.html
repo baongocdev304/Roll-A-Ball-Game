@@ -588,6 +588,9 @@
       renderer.render(scene, camera);
     }
 
+    // Khởi chạy vòng lặp render 3D ngay lập tức!
+    requestAnimationFrame(animate);
+
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
